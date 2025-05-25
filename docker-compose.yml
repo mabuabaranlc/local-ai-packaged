@@ -107,7 +107,7 @@ services:
     network_mode: host
     restart: unless-stopped
     volumes:
-      - ./data/Caddyfile:/etc/caddy/Caddyfile:ro
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
       - ./data/caddy-data:/data:rw
       - ./data/caddy-config:/config:rw
     environment:
